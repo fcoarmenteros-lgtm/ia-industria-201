@@ -36,8 +36,8 @@ groups:
 
       # El husillo pasa del margen del procedimiento
       - alert: TemperaturaHusilloAlta
-        expr: estacion_temperatura_husillo_celsius > 70
+        expr: estacion_temperatura_husillo_celsius > 62.5
         for: 5s
         labels: {severidad: aviso}
         annotations:
-          resumen: "El husillo de EST-01 supera 70 °C"
+          resumen: "El husillo de EST-01 supera 60.5 °C"
